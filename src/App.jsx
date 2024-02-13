@@ -5,6 +5,7 @@ import About from "./pages/About/About";
 import Careers from "./pages/Careers/Careers";
 import Courses from "./pages/Courses/Courses";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/courses" element={<Courses />} />
           <Route path="/careers" element={<Careers />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
