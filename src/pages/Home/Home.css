@@ -1,0 +1,89 @@
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0px 20px; */
+    /* width: 100%; */
+    background: linear-gradient(90deg, rgba(204, 240, 255, 1) 0%, rgba(204, 240, 255, 1) 32%, rgba(249, 244, 244, 1) 100%);
+
+}
+
+.home-col1 {
+    padding: 20px;
+    /* width: max-content; */
+
+    margin: 60px;
+}
+
+
+.hometitle {
+    font-size: 50px;
+    font-weight: bold;
+    color: #2C3145;
+    margin-bottom: 20px;
+}
+
+
+.highlight-word {
+    font-weight: bold;
+    background: linear-gradient(93deg, #25AAE1 0.2%, #0F75BC 27.83%, #283891 79.66%, #262262 102.55%);
+    -webkit-background-clip: text;
+    /* Clip the gradient to the text */
+    -webkit-text-fill-color: transparent;
+    /* Make the text transparent to reveal the gradient */
+
+}
+
+.home-subtitle {
+    color: #646464;
+    ;
+}
+
+.homebutton {
+    width: 200px;
+    height: 50px;
+    background: var(--linear-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    border-radius: 10px;
+    font-weight: 300;
+    margin: 20px 0px;
+}
+
+.home-col2 {
+    margin: 30px;
+}
+
+
+.hero-img {
+    width: 550px;
+    height: 550px;
+}
+
+
+
+.bars {
+    margin-bottom: 8rem;
+
+}
+
+.bar1,
+.bar2 {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    transform-origin: center;
+}
+
+.bar1 {
+    background-color: #27AAE0;
+    transform: rotate(2deg);
+}
+
+.bar2 {
+    background-color: #2C3145;
+    transform: rotate(-2deg);
+}
