@@ -1,14 +1,21 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom"; // Import useNavigate hook
 import "./Navbar.css";
 import { FaBars, FaTimes, FaWifi } from "react-icons/fa";
 import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
+  const navigate = useNavigate(); // Hook for programmatically navigating
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
+  };
+
+  // Function to close the navbar and navigate to the path
+  const handleCloseAndNavigate = (path) => {
+    setShowNavbar(false); // Close the navbar
+    navigate(path); // Navigate to the path
   };
 
   return (
@@ -26,16 +33,33 @@ const Navbar = () => {
             <div className={`nav-elements ${showNavbar ? "active" : ""}`}>
               <ul>
                 <li>
-                  <NavLink to="/">Home</NavLink>
+                  <NavLink to="/" onClick={() => handleCloseAndNavigate("/")}>
+                    Home
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/About">About us</NavLink>
+                  <NavLink
+                    to="/About"
+                    onClick={() => handleCloseAndNavigate("/About")}
+                  >
+                    About us
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/careers">Careers</NavLink>
+                  <NavLink
+                    to="/careers"
+                    onClick={() => handleCloseAndNavigate("/careers")}
+                  >
+                    Careers
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/courses">Courses</NavLink>
+                  <NavLink
+                    to="/courses"
+                    onClick={() => handleCloseAndNavigate("/courses")}
+                  >
+                    Courses
+                  </NavLink>
                 </li>
               </ul>
             </div>

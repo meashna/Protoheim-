@@ -9,9 +9,9 @@ import { MdOutlineLocationOn } from "react-icons/md";
 const Contact = () => {
   return (
     <div>
-      <div className="contact-subtitle">hi</div>
-      <div className="contact-title">hlo</div>
-      <div className="contact-conatainer">
+      <div className="contact-subtitle">Want to know more?</div>
+      <div className="contact-title">Get in Touch</div>
+      <div className="contact-containermain">
         <div className="contact-left">
           <div className="contact-form">
             <form className="contactform-areas">
@@ -51,47 +51,41 @@ const Contact = () => {
           <div className="contact-details">
             <div className="contact-info">Contact Info</div>
             <div className="full-contacts">
-              <div className="mail-number">
-                <div className="mail">
-                  <div className="mail-logo">
-                    <div className="mail-box">
-                      <div className="mailbox-logo">
-                        <IoMailOutline />
-                      </div>
+              <div className="contact-containerup">
+                <div className="contactrows-up">
+                  <div className="contactinfologo-box">
+                    <div className="contactinfo-logo">
+                      <IoMailOutline />
                     </div>
                   </div>
-                  <div className="mail-details">
-                    <div className="top-mail">Mail</div>
-                    <div className="bottom-mail">protoheim@gmail.com</div>
+                  <div className="contact-details">
+                    <div className="top-details">Mail</div>
+                    <div className="bottom-details">protoheim@gmail.com</div>
                   </div>
                 </div>
-                <div className="mail">
-                  <div className="mail-logo">
-                    <div className="mail-box">
-                      <div className="mailbox-logo">
-                        <IoCallOutline />
-                      </div>
+                <div className="contactrows-up">
+                  <div className="contactinfologo-box">
+                    <div className="contactinfo-logo">
+                      <IoCallOutline />
                     </div>
                   </div>
-                  <div className="mail-details">
-                    <div className="top-mail">Mail</div>
-                    <div className="bottom-mail">protoheim@gmail.com</div>
+                  <div className="contact-details">
+                    <div className="top-details">Contact</div>
+                    <div className="bottom-details">12345678</div>
                   </div>
                 </div>
               </div>
-              <div className="loc">
-                {" "}
-                <div className="loc">
-                  <div className="mail-logo">
-                    <div className="mail-box">
-                      <div className="mailbox-logo">
-                        <MdOutlineLocationOn />
-                      </div>
-                    </div>
+
+              <div className="contactrows-down">
+                <div className="contactinfologo-box">
+                  <div className="contactinfo-logo">
+                    <MdOutlineLocationOn />
                   </div>
-                  <div className="mail-details">
-                    <div className="top-mail">Mail</div>
-                    <div className="bottom-mail">protoheim@gmail.com</div>
+                </div>
+                <div className="contact-details">
+                  <div className="top-details">Location</div>
+                  <div className="bottom-details">
+                    KMEA College of Engineering, Mochamkulam, Aluva
                   </div>
                 </div>
               </div>

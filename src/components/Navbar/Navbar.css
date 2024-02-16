@@ -108,7 +108,7 @@
     position: absolute;
     right: 0;
     top: 60px;
-    background-color: #fef7e5;
+    background-color: #fff;
     width: 0px;
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;
@@ -116,7 +116,7 @@
   }
 
   .nav-elements.active {
-    width: 270px;
+    width: 250px;
   }
 
   .nav-elements ul {
@@ -132,5 +132,8 @@
   .nav-btn {
     display: none;
   }
+
+
+
 
 }

@@ -10,27 +10,29 @@
     font-size: 3.5rem;
     font-weight: bold;
     text-align: center;
-    /* margin-bottom: 0.5rem; */
     background: linear-gradient(93deg, #25AAE1 0.2%, #0F75BC 27.83%, #283891 79.66%, #262262 102.55%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-
-
-.contact-conatainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
+.contact-containermain {
     padding: 2rem;
     width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
-
 }
 
 .contact-left {
-    display: grid;
-    grid-template-rows: 0fr 1fr;
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+.contact-right {
+    flex: 1;
 }
 
 .contact-png {
@@ -40,22 +42,37 @@
 }
 
 .contactform-areas {
-
     display: flex;
     align-items: start;
-    /* justify-content: center; */
     flex-direction: column;
-    padding: 1rem;
+    /* padding: 1rem; */
+    padding: 1rem 1rem 1rem 0;
 }
 
 .contact-inputs {
     width: 80%;
     margin: 0.3rem 0;
+    padding: 0.3rem;
     height: 3rem;
     border-radius: 5px;
     font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid #7B7C81;
+    color: #000000;
+}
+
+.contact-inputs:focus {
+    outline: none;
+    /* Remove outline on focus */
+    border: 1px solid #7B7C81;
+}
+
+.contact-inputs::placeholder {
+    font-size: 0.8rem;
+    color: #7B7C81;
     font-weight: 400;
 }
+
 
 .contact-submit {
     border-radius: 5px;
@@ -74,106 +91,127 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin: 0.3rem 0 1rem 0;
 }
 
 .contact-submit:hover {
     background-color: #574c4c;
 }
 
-
 .contact-details {
-    padding: 1rem;
+    padding: 0.1rem;
+    flex: 1;
+
 }
+
+.contact-form {
+    flex: 1;
+}
+
 
 
 .contact-info {
-
     width: 14rem;
-    border-left: 5px solid #283891;
+    border-left: 2px solid #283891;
     padding: 0.5rem;
     color: #2C3145;
-    font-weight: 600;
-
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
-.mail-number {
+/* .full-contacts {
+    margin: 2px;
 
+} */
+
+.contact-containerup {
     display: flex;
-    /* padding: 0.5rem; */
-
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    width: 80%;
 }
 
-
-
-.mail {
-
-    padding: 0.5rem;
-    flex: 1;
-    display: flex;
-}
-
-.mail-logo {
-
+.contactrows-up {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
 
 }
 
+.contactrows-down {
+    /* margin: 5px; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
 
-.mail-box {
+}
+
+.contactinfologo-box {
     background-color: #CAEEFD;
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    position: relative;
-}
-
-.mailbox-logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #283891;
-}
-
-
-.mail-details {
-
-    margin: 0 0.5rem;
-}
-
-.top-mail {
-    color: #2C3145;
-}
-
-.bottom-mail {
-    color: #7B7C81;
-}
-
-.number {
-
-    padding: 0.5rem;
-    flex: 1;
-}
-
-.loc {
-
-    padding: 0.2rem;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.contactinfo-logo {
+    color: #283891;
+    font-size: 1.5rem;
+
 }
 
 
+.top-details {
+    color: #2C3145;
+    font-size: 1rem;
 
-@media (max-width: 768px) {
+}
+
+.bottom-details {
+    color: #7B7C81;
+    font-size: 0.8rem;
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-left {
+        display: flex;
+        flex-direction: column;
+
+    }
+
     .contact-right {
         display: none;
         /* Hide right content */
     }
 
-    .contact-left {
-        grid-template-rows: auto;
-        /* Single column for mobile */
+    .contact-containermain {
+        flex-direction: row;
     }
+
+    .contact-inputs {
+        width: 95%;
+        /* margin: 0.3rem 0;
+        padding: 0.5rem; */
+        padding: 0.5rem;
+        height: 2rem;
+        border-radius: 5px;
+        font-size: 1rem;
+        /* font-weight: 500; */
+        border: 0.5px solid #7B7C81;
+        color: #000000;
+    }
+
+    .contact-containermain {
+        margin: 0 auto;
+
+    }
+
+
 }

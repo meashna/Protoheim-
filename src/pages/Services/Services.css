@@ -88,3 +88,42 @@
     color: #ffffff;
     /* New color for .service-descp */
 }
+
+
+@media (max-width:600px) {
+
+    .service-container {
+        margin: 1.5rem;
+    }
+
+
+
+    .service-box {
+        width: 8rem;
+        height: 8rem;
+        margin: 1.3rem;
+        border-radius: 10px;
+
+    }
+
+
+    .service-logo {
+        color: #2C3145;
+        font-size: 5rem;
+        font-weight: 100;
+
+    }
+
+    .service-descp {
+        color: #2C3145;
+        font-size: 0.5rem;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 5px;
+
+
+    }
+
+
+
+}

@@ -7,6 +7,7 @@ body {
   font-size: 16px;
   /* line-height: 1.5; */
   color: #000000;
+  overflow-x: hidden
 }
 
 
@@ -16,6 +17,8 @@ body {
   --darkblue: #262262;
   --lightblue: #27AAE0;
   --mediumblue: #283891;
+  /* overflow-x: hidden; */
+
 
   /* Fonts */
   --font-primary: 'Poppins', sans-serif;
@@ -30,4 +33,10 @@ body {
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px; */
+}
+
+@media (max-width: 600px) {
+  :root {
+    font-size: 8px;
+  }
 }
