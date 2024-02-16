@@ -1,0 +1,179 @@
+.contact-subtitle {
+    color: #646464;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 1rem 0 0 0;
+}
+
+.contact-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    /* margin-bottom: 0.5rem; */
+    background: linear-gradient(93deg, #25AAE1 0.2%, #0F75BC 27.83%, #283891 79.66%, #262262 102.55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.contact-conatainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 2rem;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.contact-left {
+    display: grid;
+    grid-template-rows: 0fr 1fr;
+}
+
+.contact-png {
+    width: 35rem;
+    height: 40rem;
+    margin-bottom: -5rem;
+}
+
+.contactform-areas {
+
+    display: flex;
+    align-items: start;
+    /* justify-content: center; */
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.contact-inputs {
+    width: 80%;
+    margin: 0.3rem 0;
+    height: 3rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.contact-submit {
+    border-radius: 5px;
+    background: linear-gradient(93deg, #25AAE1 0.2%, #0F75BC 27.83%, #283891 79.66%, #262262 102.55%);
+    /* background-color: #262262; */
+    color: #ffffff;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    /* transition: all 0.3s ease-in; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-submit:hover {
+    background-color: #574c4c;
+}
+
+
+.contact-details {
+    padding: 1rem;
+}
+
+
+.contact-info {
+
+    width: 14rem;
+    border-left: 5px solid #283891;
+    padding: 0.5rem;
+    color: #2C3145;
+    font-weight: 600;
+
+}
+
+.mail-number {
+
+    display: flex;
+    /* padding: 0.5rem; */
+
+}
+
+
+
+.mail {
+
+    padding: 0.5rem;
+    flex: 1;
+    display: flex;
+}
+
+.mail-logo {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+
+.mail-box {
+    background-color: #CAEEFD;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: relative;
+}
+
+.mailbox-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #283891;
+}
+
+
+.mail-details {
+
+    margin: 0 0.5rem;
+}
+
+.top-mail {
+    color: #2C3145;
+}
+
+.bottom-mail {
+    color: #7B7C81;
+}
+
+.number {
+
+    padding: 0.5rem;
+    flex: 1;
+}
+
+.loc {
+
+    padding: 0.2rem;
+    display: flex;
+}
+
+
+
+@media (max-width: 768px) {
+    .contact-right {
+        display: none;
+        /* Hide right content */
+    }
+
+    .contact-left {
+        grid-template-rows: auto;
+        /* Single column for mobile */
+    }
+}

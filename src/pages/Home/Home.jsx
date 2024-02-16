@@ -3,6 +3,7 @@ import "./Home.css";
 import { FaArrowRight } from "react-icons/fa";
 import heroimg from "../../assets/hero-img.png";
 import Services from "../Services/Services";
+import Contact from "../Contact/Contact";
 
 const Home = () => {
   return (
@@ -36,6 +37,7 @@ const Home = () => {
         </div>
       </div>
       <Services />
+      <Contact />
     </div>
   );
 };

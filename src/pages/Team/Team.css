@@ -1,0 +1,102 @@
+.team-subtitle {
+    /* background-color: aqua; */
+    color: #646464;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 1rem;
+}
+
+.team-title {
+    /* background-color: rgb(234, 0, 255); */
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(93deg, #25AAE1 0.2%, #0F75BC 27.83%, #283891 79.66%, #262262 102.55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.team-container {
+    /* background-color: rgb(102, 255, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60rem;
+    height: max-content;
+    margin: 0 auto;
+}
+
+.team-box {
+    /* background-color: rgb(204, 7, 148); */
+    flex: 1;
+    width: 60rem;
+    height: max-content;
+    height: max-content;
+    margin: 1rem;
+    /* padding: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 11.622px 0px rgba(0, 0, 0, 0.10);
+}
+
+
+.team-pic {
+    /* background-color: chartreuse; */
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+}
+
+.team-name {
+    /* background-color: rgb(255, 0, 0); */
+    margin-top: 0.5rem;
+    color: #272971;
+    font-size: 1.5rem;
+    /* font-weight: 500; */
+}
+
+.team-position {
+    /* background-color: rgb(0, 255, 0); */
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #797979;
+}
+
+/* .team-socials {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding-bottom: 0.4rem;
+    height: 2rem;
+} */
+
+.team-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding-bottom: 0.4rem;
+    height: 2rem;
+}
+
+.team-socials a {
+    text-decoration: none;
+    color: inherit;
+    /* Inherit color from parent */
+    transition: transform 0.2s ease-in-out;
+    /* Animation effect */
+}
+
+.team-socials a:hover {
+    transform: scale(1.2);
+    /* Scale up on hover */
+}
