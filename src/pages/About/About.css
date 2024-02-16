@@ -1,15 +1,12 @@
 .abt-subtitle {
-
     color: #646464;
     font-size: 1rem;
     font-weight: 500;
     text-align: center;
     margin: 1rem 0 0 0;
-
 }
 
 .abt-title {
-
     font-size: 3.5rem;
     font-weight: bold;
     text-align: center;
@@ -57,4 +54,26 @@
     height: 20rem;
 
     /* background-color: blue; */
+}
+
+@media (max-width:600px) {
+
+    .abt-container {
+
+        width: 90%;
+        margin: 0 20px;
+
+    }
+
+    .abt-left {
+        display: none;
+    }
+
+    .abt-right {
+        margin: 1rem;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+
 }

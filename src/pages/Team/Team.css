@@ -100,3 +100,37 @@
     transform: scale(1.2);
     /* Scale up on hover */
 }
+
+
+@media (max-width:600px) {
+
+    .team-container {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    .team-box {
+        /* background-color: rgb(204, 7, 148); */
+        flex: 1;
+        width: 30rem;
+        margin: 0.5rem;
+        border-radius: 5px;
+    }
+
+    .team-pic {
+        /* background-color: chartreuse; */
+        width: 7rem;
+        height: 6rem;
+        margin: 5px;
+
+    }
+
+
+    .team-socials {
+
+        font-size: 1rem;
+
+    }
+
+
+}
